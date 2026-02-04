@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+         .hero {
+           background-image: url("img/AI.jpeg");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color: rgba(14, 10, 10, 0.5); /* efek gelap */
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+      <div class="hero">
+        <div
+            class="overlay d-flex justify-content-center align-items-center text-center"
+        >
+            <div class="text-light">
+                <h1 class="display-5 fw-bold">Tabel Data Siswa</h1>
+                <p class="fs-4">Kelola data kehadiran, profil, dan status akademik siswa dengan lebih mudah dan efisien.</p>
+                <button class="btn btn-primary">Lihat Tabel</button>
+                <button class="btn btn-outline-light">Panduan</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container align-middle text-center">
+        <h2>Data Siswa Kelas X</h2>
+        <p>Contoh Penggunaan Tabel, Gambar, Button Botstrap</p>
+
+        <div class="img-thumbnail">
+            <table class="table table-bordered table-striped table-hover img-thumbnail">
+            <thead class="align-middle text-center">
+                <tr class="table-dark">
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody class="align-middle text-center">
+                <tr>
+                    <td>1</td>
+                    <td><img src="img/je.jpeg" width="80px" class="rounded-circle img-fluid"></td>
+                    <td>jiso</td>
+                    <td>X PPLG 1</td>
+                    <td><span class="badge bg-success">Aktif</span></td>
+                    <td>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="img/ji.jpeg" width="80px" class="rounded-circle img-fluid"></td>
+                    <td>jeni</td>
+                    <td>X PPLG 1</td>
+                    <td><span class="badge bg-warning">Izin</span></td>
+                     <td>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="img/q.jpg" width="80px" class="rounded-circle img-fluid"></td>
+                    <td>akbar</td>
+                    <td>X PPLG 2</td>
+                    <td><span class="badge bg-danger">Alfa</span></td>
+                     <td>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Hapus</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="text-center align-middle">
+        <button class="btn btn-primary">Tambah Data</button>
+        <button class="btn btn-outline-secondary">Ekspor Excel</button>
+    </div>
+</body>
+</html>
